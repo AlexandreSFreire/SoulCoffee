@@ -1,0 +1,453 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #8d8d8d;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*position: -webkit-sticky;
+    position: sticky;*/
+    top: 0;
+}
+
+.logo {
+    padding-left: 25px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media (max-width:700px) {
+    header{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    nav ul {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para a apresentação da empresa */
+.empresa-apresentacao {
+    background-color: #fff;
+    padding: 100px;
+    text-align: center;
+    /*background-image: url(/images/cidade.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+}
+
+.empresa-apresentacao .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.empresa-apresentacao #apresentacao{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.empresa-apresentacao .texto {
+    flex: 1;
+    text-align: left;
+
+}
+
+.empresa-apresentacao .imagem {
+    flex: 1;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.empresa-apresentacao h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 800;
+}
+
+.empresa-apresentacao p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.empresa-apresentacao a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.empresa-apresentacao a:hover {
+    background-color: #555;
+}
+
+.empresa-apresentacao .imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width:700px) {
+    .empresa-apresentacao{
+        padding: 30px;
+    }
+
+    .empresa-apresentacao .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Estilos para os motivos para ter um site */
+.motivos-site {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.motivos-site .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.motivos-site h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.motivos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.motivo {
+    flex: 1;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.motivo h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.motivo p {
+    font-size: 18px;
+    color: #666;
+}
+
+@media (max-width:700px) {
+    .motivos-sites{
+        padding: 50px 10px;
+    }
+
+    .motivos-site h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .motivos {
+        display: grid;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* Estilos para o banner */
+.banner {
+    background-color: rgb(240, 240, 240);
+    height: 800px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.banner #titulo-banner{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+/* Estilos para o slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.box-slideshow{
+    width: 100%;
+    height: 100%;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+.banner #esquerda{
+    left: 0;
+}
+
+.banner #direita{
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para o texto "alt" da imagem */
+.text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+@media (max-width:700px) {
+    .banner {
+        background-color: rgb(240, 240, 240);
+        height: 500px;
+        padding: 50px 0 70px 0;
+        text-align: center;
+        position: relative;
+    }
+}
+
+/* Estilos para a seção Como Funciona */
+.como-funciona {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.como-funciona .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos para a imagem flutuante */
+.flutuante {
+    margin-top: 50px;
+    animation: floatUpDown 5s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+
+.como-funciona h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.como-funciona p {
+    font-size: 22px;
+    color: #666;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+
+.passos {
+    display: grid;
+    justify-content: center;
+}
+
+.passo {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2);    border-radius: 5px;
+}
+
+.passo h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.passo p {
+    font-size: 18px;
+    color: #666;
+}
+
+@media (max-width:700px) {
+    .como-funciona h2 {
+        font-size: 25px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .como-funciona p {
+        font-size: 18px;
+        color: #666;
+        font-weight:400;
+        margin-bottom: 30px;
+    }
+
+    .passo {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.2);    border-radius: 5px;
+    }
+}
+
+/* Estilos para a seção de produtos */
+.produtos {
+    padding: 20px;
+}
+
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-icons li {
+    display: inline-block;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:700px) {
+    .contact-section{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+

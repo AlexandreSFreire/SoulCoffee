@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Seu Site de Vendas</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Arquivo de estilos CSS -->
+    <script src="https://kit.fontawesome.com/37eac4822f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo Soul Coffee">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sites">Sites</a></li>
+                <li><a href="#apresentacao">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="empresa-apresentacao">
+            <div class="container" id="apresentacao">
+                <div class="texto">
+                    <h2>Quem Somos</h2>
+                    <p>Somos uma empresa dedicada a fornecer os melhores produtos aos nossos clientes. Nossa missão é...</p>
+                    <p>Conheça mais sobre nós e o que oferecemos!</p>
+                    <a href="#sites">Saiba Mais</a>
+                </div>
+                <div class="imagem">
+                    <img src="./images/bannersf.png" alt="Imagem de apresentação da empresa">
+                </div>
+            </div>
+        </section>
+
+        <section class="motivos-site">
+            <div class="container">
+                <h2>Por que ter um site para sua marca?</h2>
+                <div class="motivos">
+                    <div class="motivo">
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                        <h3>1. Alcance Global</h3>
+                        <p>Com um site, sua marca pode ser acessada por pessoas em todo o mundo, aumentando seu alcance e potencial de vendas.</p>
+                    </div>
+                    <div class="motivo">
+                        <i class="fa-solid fa-handshake fa-2xl"></i>
+                        <h3>2. Credibilidade</h3>
+                        <p>Um site profissional transmite confiança aos clientes em potencial, aumentando a credibilidade da sua marca.</p>
+                    </div>
+                    <div class="motivo">
+                        <i class="fa-solid fa-fire fa-2xl"></i>
+                        <h3>3. Marketing Digital</h3>
+                        <p>Um site é uma ferramenta essencial para suas estratégias de marketing digital, permitindo o uso de SEO, mídias sociais e outras táticas para atrair clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="banner" id="sites">
+            <h3 id="titulo-banner">Alguns sites já criados:</h3>
+            <div class="slideshow-container">
+                <a class="prev" onclick="plusSlides(-1)" id="esquerda">&#10094;</a>
+                <div class="box-slideshow">
+                    <div class="mySlides fade">
+                        <img src="./images/BootcampDNC.jpg" style="width:100%">
+                        <div class="text">Landing Page criada no decorrer do curso da escola DNC, site de inscrição para BootCamp DNC</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="./images/LandingPageDNC.jpg" style="width:100%">
+                        <div class="text">Landing Page criada no decorrer do curso da escola DNC, site para apresentação do curso</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                        <img src="./images/PortfolioDevEmDobro.jpg" style="width:100%">
+                        <div class="text">Portfólio criado para apresentação de projetos desenvolvidos por Alexandre Souza Freire, a principio, criador deste site</div>
+                    </div>
+    
+                    <!--<div class="mySlides fade">
+                        <img src="./images/MammaMia.jpg" style="width:100%">
+                    </div>-->
+                </div>
+                <!-- Botões de navegação -->
+                <a class="next" onclick="plusSlides(1)" id="direita">&#10095;</a>
+            </div>
+        </section>
+
+        <section class="como-funciona">
+            <h2>Como um Site Funciona?</h2>
+            <p>Um site funciona como uma vitrine online para sua marca. <br> Ele é composto por várias partes que trabalham juntas para fornecer informações, atrair clientes e facilitar transações.</p>
+            <div class="container">
+                <div class="flutuante">
+                    <img src="./images/cafe.png" alt="Imagem flutuante" width="50%">
+                </div>
+                <div class="passos">
+                    <div class="passo">
+                        <h3>1. Design</h3>
+                        <p>O design do site inclui layout, cores, fontes e elementos visuais que criam a aparência e a sensação do seu site.</p>
+                    </div>
+                    <div class="passo">
+                        <h3>2. Desenvolvimento</h3>
+                        <p>O desenvolvimento envolve a codificação do site usando linguagens como HTML, CSS e JavaScript, para tornar o design uma realidade funcional.</p>
+                    </div>
+                    <div class="passo">
+                        <h3>3. Hospedagem</h3>
+                        <p>A hospedagem é onde seu site é armazenado e disponibilizado na internet. Você precisa de um provedor de hospedagem para manter seu site online.</p>
+                    </div>
+                    <div class="passo">
+                        <h3>4. Conteúdo</h3>
+                        <p>O conteúdo do seu site inclui texto, imagens, vídeos e outros elementos que informam os visitantes sobre sua marca e seus produtos ou serviços.</p>
+                    </div>
+                    <div class="passo">
+                        <h3>5. Manutenção</h3>
+                        <p>A manutenção regular do site garante que ele permaneça atualizado, seguro e funcional. Isso inclui atualizar conteúdo, corrigir bugs e fazer backup.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        
+        <section class="produtos">
+            <!-- Listagem de produtos -->
+        </section>
+    </main>
+
+    <section class="contact-section" id="contato">
+        <h2>Entre em contato!</h2>
+        <ul class="social-icons">
+            <!--<li><a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" alt="Twitter"></a></li>-->
+            <li><a href="https://www.instagram.com/alexandreo13/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/alexandre-freire-194694303/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a></li>
+            <li><a href="https://wa.me/5511954091054" target="_blank"><img src="./images/whatsapp.png" alt="Whatsapp"></a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p>Todos os direitos reservados, Soul Coffee 2024.</p>
+        </div>
+        <div class="social-icons">
+            <!-- Ícones de redes sociais -->
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para o carrossel
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Função para avançar/retroceder os slides
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Função para exibir o slide atual
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var texts = document.getElementsByClassName("text");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < texts.length; i++) {
+                texts[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";  
+            texts[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
