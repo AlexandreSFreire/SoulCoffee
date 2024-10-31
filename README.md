@@ -15,7 +15,7 @@ Design focado em clareza e fácil leitura.
 
 ## Como Utilizar
 1. Faça o download ou clone o repositório:
-git clone https://github.com/AlexandreSFreire/portfolio.git
+git clone https://github.com/AlexandreSFreire/SoulCoffee.git
 
 3. Navegue até o diretório do projeto e abra o arquivo index.html no seu navegador para visualizar a página.
 Contribuições
